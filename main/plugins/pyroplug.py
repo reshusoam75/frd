@@ -1,10 +1,13 @@
 #Github.com-Vasusen-code
 
 import asyncio, time, os
+import configparser
 
 from .. import bot as Drone
-from .. import config as config
 from .. import FORCESUB
+
+config = configparser.ConfigParser()
+config.read("config.ini")
 from main.plugins.progress import progress_for_pyrogram
 from main.plugins.helpers import screenshot
 
